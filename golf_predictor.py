@@ -8,14 +8,7 @@ Example taken from https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-expl
 For more info about Baye's Theorem: https://www.youtube.com/watch?v=HZGCoVF3YvM (3Blue1Brown).
 '''
 
-data = pd.DataFrame(
-    {
-        'overcast': [0, 4], 
-        'rainy': [3, 2],
-        'sunny': [2, 3]
-    }, 
-    index=['no', 'yes']
-)
+data = pd.read_csv('golf_data.csv', index_col=0)
 
 
 def sum_row(df, index):
